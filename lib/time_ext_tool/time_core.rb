@@ -1,4 +1,4 @@
-module TimeCore
+module TimeExtTool
 
   def to_short(is_text = false, need_year = true)
     arr = ["%Y年", "%m月%d日"]
@@ -20,14 +20,14 @@ module TimeCore
 end
 
 class Date
-  include TimeCore
+  include TimeExtTool
 end
 
 class DateTime
-  include TimeCore
+  include TimeExtTool
 end
 
 class Time
-  include TimeCore
+  include TimeExtTool
 end
 
